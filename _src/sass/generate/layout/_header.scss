@@ -1,0 +1,25 @@
+.site_header {
+    // position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 98px;
+    background-color: var(--pri_02);
+
+    .container {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        display: block;
+        width: 200px;
+        height: 70px;
+
+        svg {
+            filter: drop-shadow(0px 4px 4px #{rgba(color(pri_03),0.1)})
+            drop-shadow(0px 4px 16px #{rgba(color(pri_03),0.5)});
+        }
+    }
+}

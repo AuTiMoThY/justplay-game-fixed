@@ -1,0 +1,32 @@
+$font: (
+    'slogan': (
+        'fz': responsive-clamp(68, 68),
+        'fw': 700,
+        'ls': responsive-clamp(68 * 0.05, 68 * 0.05, 'px'),
+        'lh': '1'
+    ),
+    'body': (
+        'fz': responsive-clamp(16, 16),
+        'fw': 600,
+        'ls': responsive-clamp(16 * 0.05, 16 * 0.05, 'px'),
+        'lh': '1.6'
+    ),
+    'note': (
+        'fz': responsive-clamp(12, 12),
+        'fw': 600,
+        'ls': responsive-clamp(12 * 0.05, 12 * 0.05, 'px'),
+        'lh': '1.5'
+    ),
+    'title-L': (
+        'fz': responsive-clamp(42, 42),
+        'fw': 700,
+        'ls': responsive-clamp(42 * 0.08, 42 * 0.08, 'px'),
+        'lh': '1.5'
+    ),
+    'title-M': (
+        'fz': responsive-clamp(22, 22),
+        'fw': 700,
+        'ls': responsive-clamp(22 * 0.05, 22 * 0.05, 'px'),
+        'lh': '1.5'
+    ),
+);

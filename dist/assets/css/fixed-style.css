@@ -1,0 +1,13 @@
+/* *****************************************/
+/*    css
+/*    V 20240413
+/*        by AuOzzy
+/******************************************/
+img {
+  height: auto;
+}
+
+.p1 .swiper-slide img {
+  width: 100%;
+}
+/*# sourceMappingURL=fixed-style.css.map */

@@ -1,0 +1,33 @@
+body {
+    transition: opacity 0.3s ease-in-out;
+    @extend .font-body;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: currentColor;
+    transition: all 0.3s ease-in-out;
+}
+
+.hr {
+    width: 100%;
+    height: 1px;
+    background-color: color("Gray-04");
+
+    flex: 0 0 auto;
+
+    &.show-desktop {
+        @include rwd-mobile {
+            display: none;
+        }
+    }
+    &.show-mobile {
+        display: none;
+        @include rwd-mobile {
+            display: block;
+        }
+    }
+}
