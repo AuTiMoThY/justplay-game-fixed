@@ -54,7 +54,13 @@ function compileSASS() {
         }))
         .pipe(sourcemaps.write('.'))
         .pipe(dest(output.css))
-        .pipe(browserSync.stream());
+        // .pipe(browserSync.stream())
+        .on('end', () => {
+            console.log('=================================');
+            console.log(`compileSASS`);
+            console.log('=================================');
+            browserSync.reload();
+        })
 }
 
 function compileHTML() {

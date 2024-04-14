@@ -8,4 +8,24 @@
 @use "sass:math";
 @import "core";
 
-@import "frontend/banner";
+img {
+    height: auto;
+}
+
+@import "frontend/home";
+@import "frontend/footer";
+
+.marquee {
+    display: none;
+}
+
+@import "frontend/pdt";
+@import "frontend/cart";
+
+
+#topBtn {
+    @media (max-width: 768px) {
+        top: unset;
+        bottom: 16px;
+    }
+}

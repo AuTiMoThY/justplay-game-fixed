@@ -1,0 +1,7 @@
+.p1-detail .product-slider img, .p1-detail .product-thumbs img {
+    max-width: none;
+    object-fit: cover;
+
+    width: 100%;
+    aspect-ratio: 1/1;
+}

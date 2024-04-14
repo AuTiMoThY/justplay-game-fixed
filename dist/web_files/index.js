@@ -34,15 +34,20 @@ new Swiper(".banner", {
         },
     }),
     new Swiper(".recommend", {
-        spaceBetween: 56,
+        spaceBetween: 0,
         slidesPerView: "auto",
-        centeredSlides: getcCntered(),
+        centeredSlides: true,
         loop: !0,
         direction: "horizontal",
         navigation: { nextEl: ".p5 .arrow-right", prevEl: ".p5 .arrow-left" },
-        on: {
-            resize: function () {
-                getcCntered();
+
+        breakpoints: {
+            // when window width is >= 768px
+            768: {
+                spaceBetween: 56,
+                slidesPerView: "auto",
+                centeredSlides: false
             },
-        },
+        }
+
     });
